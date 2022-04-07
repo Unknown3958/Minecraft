@@ -24,7 +24,7 @@ const lightHelper = new THREE.PointLightHelper(pointLight);
 const gridHelper = new THREE.GridHelper(200, 50);
 scene.add(lightHelper, ambientLight, pointLight, gridHelper)
 
-const Sky = new THREE.TextureLoader().load('Textures/sky.jpg');
+const Sky = new THREE.TextureLoader().load('./Textures/sky.jpg');
 scene.background = Sky;
 
 const LockMouse = new THREE.PointerLockControls(camera, document.body);
@@ -40,22 +40,22 @@ let BlocksPlaced = [];
 
 var CubeTextures = [
     new THREE.MeshStandardMaterial({
-        map: textureLoader.load("Textures/grass_side.jpg")
+        map: textureLoader.load("./Textures/grass_side.jpg")
     }),
     new THREE.MeshStandardMaterial({
-        map: textureLoader.load("Textures/grass_side.jpg")
+        map: textureLoader.load("./Textures/grass_side.jpg")
     }),
     new THREE.MeshStandardMaterial({
-        map: textureLoader.load("Textures/grass_top.jpg")
+        map: textureLoader.load("./Textures/grass_top.jpg")
     }),
     new THREE.MeshStandardMaterial({
-        map: textureLoader.load("Textures/dirt.jpg")
+        map: textureLoader.load("./Textures/dirt.jpg")
     }),
     new THREE.MeshStandardMaterial({
-        map: textureLoader.load("Textures/grass_side.jpg")
+        map: textureLoader.load("./Textures/grass_side.jpg")
     }),
     new THREE.MeshStandardMaterial({
-        map: textureLoader.load("Textures/grass_side.jpg")
+        map: textureLoader.load("./Textures/grass_side.jpg")
     }),
 ]
 
@@ -73,22 +73,22 @@ function placeBlock(x, y, z, Texture) {
 function ChangeBlock(Block, Face) {
     var Textures = [
         new THREE.MeshStandardMaterial({
-            map: textureLoader.load("Textures/grass_side.jpg")
+            map: textureLoader.load("./Textures/grass_side.jpg")
         }),
         new THREE.MeshStandardMaterial({
-            map: textureLoader.load("Textures/grass_side.jpg")
+            map: textureLoader.load("./Textures/grass_side.jpg")
         }),
         new THREE.MeshStandardMaterial({
-            map: textureLoader.load("Textures/grass_top.jpg")
+            map: textureLoader.load("./Textures/grass_top.jpg")
         }),
         new THREE.MeshStandardMaterial({
-            map: textureLoader.load("Textures/dirt.jpg")
+            map: textureLoader.load("./Textures/dirt.jpg")
         }),
         new THREE.MeshStandardMaterial({
-            map: textureLoader.load("Textures/grass_side.jpg")
+            map: textureLoader.load("./Textures/grass_side.jpg")
         }),
         new THREE.MeshStandardMaterial({
-            map: textureLoader.load("Textures/digrass_sidert.jpg")
+            map: textureLoader.load("./Textures/digrass_sidert.jpg")
         }),
     ]
     if (Face == "Right") {
