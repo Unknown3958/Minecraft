@@ -1,5 +1,3 @@
-import './style.css';
-
 noise.seed(Math.random())
 const scene = new THREE.Scene();
 
